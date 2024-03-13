@@ -19,3 +19,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Additionally, you cannot claim copyright or ownership of the Code or Software.
+
+The footer signatures with version, hash, and URL link to the official website
+of the project MUST BE RETAINED, MUST BE VISIBLE IN EVERY PAGE, and CANNOT BE
+MODIFIED BY ANYONE OTHER THAN THE OWNER.
+
+Footer signatures are in the format
+"© 2024 - current year · https://github.com/bikkysamuel/AnimeTV/ · version - commit"
+or "AnimeTV by bikkysamuel".
+
+The owner reserves the right to change this additional clause at their discretion.
