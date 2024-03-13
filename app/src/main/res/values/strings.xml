@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AnimeTV</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="browse">Browse</string>
+    <string name="settings">Settings</string>
+
+    <string name="dub">DUB</string>
+    <string name="Sub">SUB</string>
+    <string name="dub_selected">DUB - Selected</string>
+    <string name="sub_selected">SUB - Selected</string>
+
+    <string name="anime_title">Anime Title</string>
+    <string name="updated_on">Updated On</string>
+    <string name="btn_add_as_fav">Add as Fav</string>
+    <string name="btn_fav">Fav</string>
+    <string name="upload_date">Upload Date</string>
+</resources>

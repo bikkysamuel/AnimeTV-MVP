@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_videoPlayerPageItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conLyt_videoPlayerPageFirstItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_videoPlayerPagePoster"
+                    android:layout_width="180dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="3:4"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_addToFav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_add_as_fav"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_videoPlayerPageTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintTop_toBottomOf="@id/btn_addToFav"
+                    app:layout_constraintLeft_toRightOf="@id/img_videoPlayerPagePoster"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/img_videoPlayerPagePoster" />
+
+                <TextView
+                    android:id="@+id/txt_videoPlayerPageDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="14sp"
+                    android:textAlignment="viewStart"
+                    android:text="Anime Description Here"
+                    app:layout_constraintTop_toBottomOf="@id/img_videoPlayerPagePoster" />
+
+                <TextView
+                    android:id="@+id/txt_currentVideoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:text="Current episode # / title"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/txt_videoPlayerPageDescription" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conLyt_videoPlayerPageEpisode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/conLyt_videoPlayerPageFirstItem">
+
+                <TextView
+                    android:id="@+id/txt_videoType"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/Sub"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/guideline_videoPlayerPageItem"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_videoPlayerPageItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_videoType" />
+
+                <TextView
+                    android:id="@+id/txt_seNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="S00E00"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/txt_uploadDate"
+                    app:layout_constraintLeft_toRightOf="@id/guideline_videoPlayerPageItem" />
+
+                <TextView
+                    android:id="@+id/txt_uploadDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_date"
+                    android:maxLength="10"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
