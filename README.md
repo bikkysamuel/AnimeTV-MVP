@@ -2,6 +2,13 @@
 
 AnimeTV is an Android application that allows users to watch and download anime videos. The app fetches HTML data from an existing website and parses it to display content on the user's device. Users can watch videos directly within the app or download them using a browser or any download manager app of their choice.
 
+## Development
+
+- MVP Architecture Pattern
+- Room database for local data storage for the saved anime
+- Network calls using Retrofit
+- Settings page under development - planning to implement - changing themes and font style
+
 ## Features
 
 - Watch anime videos directly within the app.
